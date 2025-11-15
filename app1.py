@@ -114,7 +114,7 @@ def alice():
     utter = (req.get("original_utterance") or "").strip()
 
     if not utter:
-        text = "Скажи, что ты хочешь спросить у GPT."
+        text = "Вася на проводе."
     else:
         text = ask_openai(utter)
         if not text:
